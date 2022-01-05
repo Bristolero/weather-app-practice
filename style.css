@@ -1,0 +1,60 @@
+:root {
+    --header-bg: rgb(0, 34, 85);
+    --header-text: white;
+    --button-bg: rgb(110, 126, 218);
+    --button-bg-active: rgb(27, 37, 95);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(228, 226, 226);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--header-bg);
+    color: var(--header-text)
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-city-wrapper {
+    padding: 20px;
+}
+
+input {
+    font-size: 30px;
+}
+
+.city-btn {
+    font-size: 30px;
+    min-width: 160px;
+    margin-left: 10px;
+    background-color: var(--button-bg);
+    border: 2px solid var(--header-bg);
+    cursor: pointer;
+}
+
+.city-btn:active {
+    background-color: var(--button-bg-active);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(235, 235, 235);
+    color:rgb(83, 83, 83)
+}
