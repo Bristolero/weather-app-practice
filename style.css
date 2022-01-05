@@ -5,6 +5,11 @@
     --button-bg-active: rgb(27, 37, 95);
 }
 
+@font-face {
+    font-family: "Quicksand";
+    src: url(fonts/Quicksand.ttf);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,6 +17,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: rgb(228, 226, 226);
+    font-family: "Quicksand";
 }
 
 header {
@@ -48,6 +54,45 @@ input {
 
 .city-btn:active {
     background-color: var(--button-bg-active);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-frame {
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-today {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: lightgreen;
+    height: 600px;
+    width: 500px;
+    margin: 20px;
+    background-image: none;
+}
+
+.forecast-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 25px;
+}
+
+.forecast {
+    display: flex;
+    background-color: lightgreen;
+    height: 200px;
+    width: 250px;
 }
 
 footer {
