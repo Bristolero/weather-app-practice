@@ -17,6 +17,7 @@
             </div>
             <div class="weather-frame">
                 <div class="weather-today" id="weather-today">
+                    <h2 class="today-header">Today</h2>
                     <h2 class="city-name-header" id="city-name-header"></h2>
                     <p class="current-temp" id="current-temp"></p>
                     <p class="min-max-temp" id ="min-max-temp"></p>
@@ -24,9 +25,16 @@
                     <p class="weather" id="weather"></p>
                 </div>
                 <div class="forecast-wrapper">
-                    <div class="forecast" id="1-day"></div>
-                    <div class="forecast" id="2-day"></div>
-                    <div class="forecast" id="3-day"></div>
+                    <div class="forecast" id="1-day">
+                        <h2 class="today-header">In 24 Hours</h2>
+                        <p class="current-temp" id="1-day-temp"></p>
+                        <p class="weather" id="1-day-weather"></p>
+                    </div>
+                    <div class="forecast" id="2-day">
+                        <h2 class="today-header">In 48 Hours</h2>
+                        <p class="current-temp" id="2-day-temp"></p>
+                        <p class="weather" id="2-day-weather"></p>
+                    </div>
                 </div>
             </div>
         </div>

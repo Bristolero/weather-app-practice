@@ -79,6 +79,8 @@ input {
     width: 500px;
     margin: 20px;
     background-image: none;
+    background-position: center;
+    border: 3px solid var(--header-bg)
 }
 
 .forecast-wrapper {
@@ -90,9 +92,31 @@ input {
 
 .forecast {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: lightgreen;
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 400px;
+    background-image: none;
+    background-position: center;
+    border: 3px solid var(--header-bg)
+}
+
+/* Texts */
+.city-name-header {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.weather {
+    font-size: 30px;
+}
+
+.current-temp {
+    font-size: 88px;
+    font-weight: 400;
+    margin: 0;
 }
 
 footer {
