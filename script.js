@@ -1,3 +1,5 @@
+
+
 async function getWeatherData(str) {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${str}&appid=5c3a15a30a363e634cb2a255678865a4`, {mode: 'cors'});
@@ -54,6 +56,7 @@ const DisplayController = (() => {
     const weatherOneDay = document.getElementById("1-day");
     const weatherTwoDay = document.getElementById("2-day");
     
+    const modalDisplay = document.getElementById("loading-modal");
 
     //Content Elements of weather
     const cityNameHeader = document.getElementById("city-name-header");
@@ -71,13 +74,14 @@ const DisplayController = (() => {
     //Functions of Todays weather
     async function showTodayData() {
         const searchStr = ButtonController.handleCitySearch();
-
+        modalDisplay.style.display = 'inline-flex';
         weatherData = await getWeatherData(searchStr);
         forecastData = await getForecastData(searchStr);
 
 
         createTodayElements(weatherData);
         createForecastElements(forecastData);
+        modalDisplay.style.display = 'none';
     }
 
     function createTodayElements(data) {
